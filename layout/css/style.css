@@ -12,7 +12,7 @@ html, body {
 body {
     max-width: 100vw;
     max-height: 100vh;
-    background: #121214;
+    background: #0c0c0c;
     overflow: hidden;
     font-family: 'Montserrat', sans-serif;
 }
@@ -29,7 +29,10 @@ span {
     font-size: 15px;
 }
 
-header {
+aside {
+    display: flex;
+    flex-direction: column;
+
     position: absolute;
     color: white;
     right: 0;
@@ -38,11 +41,42 @@ header {
     border-left: 1px solid #202024;
     width: 300px;
     height: 88vh;
+    overflow: auto;
+    padding-top: 16px;
     /*border-radius: 0 0 0 5px;*/
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #232325; 
+    border-radius: 10px;
+  }
+
+aside span {
+    font-size: 12px;
+    margin: 4px 8px;
 }
 
 main {
     height: 88vh;
+    width: calc(100% - 300px);
+
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 300px);            
+    grid-auto-rows: 240px;
+    grid-gap: 20px;
+}
+
+main video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    margin: 20px;
+    border: 8px;
 }
 
 footer {
@@ -59,7 +93,7 @@ footer {
     flex: 1;
     display: flex;
     align-items: center;
-    margin-left: 8%;
+    margin-left: 7%;
 }
 
 .options-container {
@@ -87,28 +121,42 @@ footer {
 .options-container .options-list li i {
     border-radius: 50%;
     padding: 18px;
-    background: #c6baca;
+    background: #cacaca;
     transition: background 0.3s;
 }
 
 .options-container .options-list li i:hover {
     background: #202024;
+    color: rgb(201, 5, 5) !important;
 }
 
 .fa-microphone-alt {
     padding: 18px 21px !important;
 }
 
-
 .fas {
     color: #121214 !important;
 }
 
 
+
 @media(max-width: 768px) {
-    header, 
+    aside, 
     .details-container, 
     .start-presentation-container{
         display: none;
+    }
+    main {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    video:not(:first-child) {
+        display: none;
+    }   
+    video:first-child {
+        height: 50%;
+        width: 80%;
     }
 }
