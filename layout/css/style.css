@@ -29,10 +29,27 @@ span {
     font-size: 15px;
 }
 
-aside {
+aside .send-messages {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 0;
     display: flex;
-    flex-direction: column;
+    padding-left: 10px;
+}
 
+aside .send-messages input {
+    width: 95%;
+    background: none;
+    border: none;
+    outline: none;
+    color: white;
+    padding-bottom: 6px;
+    border-bottom: 1px solid #202024;
+}
+
+aside {
     position: absolute;
     color: white;
     right: 0;
@@ -41,10 +58,27 @@ aside {
     border-left: 1px solid #202024;
     width: 300px;
     height: 88vh;
-    overflow: auto;
-    padding-top: 16px;
     /*border-radius: 0 0 0 5px;*/
+    display: flex;
+    flex-direction: column;
 }
+
+aside .messages {
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
+    align-items: flex-start;
+
+    height: 90%;
+    width: 100%;
+
+    padding-top: 12px;
+}
+
+aside .send-messages {
+    height: 10%;
+}
+
 
 ::-webkit-scrollbar {
     width: 8px;
