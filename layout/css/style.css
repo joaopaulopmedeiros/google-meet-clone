@@ -287,4 +287,7 @@ li.marked:hover {
         height: 50%;
         width: 80%;
     }
+    .more-options {
+        display: none;
+    }
 }
