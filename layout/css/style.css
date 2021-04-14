@@ -149,7 +149,15 @@ aside span {
     margin: 4px 8px;
 }
 
-main {
+main.video-grid {
+    height: 88vh;
+    /*width: calc(100% - 300px);*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*main {
     height: 88vh;
     width: calc(100% - 300px);
 
@@ -167,7 +175,7 @@ main video {
     object-fit: cover;
     margin: 20px;
     border: 8px;
-}
+}*/
 
 footer {
     height: 12vh;
