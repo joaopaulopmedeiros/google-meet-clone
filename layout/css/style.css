@@ -38,6 +38,27 @@ body {
     cursor: pointer;
 }
 
+.header-item:hover {
+    background-color: #e2e2e231;
+}
+
+.header-item-user {
+    position: relative;
+}
+
+.header-item-user img {
+    border-radius: 50%; 
+    width: 30px; 
+    margin-left: 4px;
+}
+
+.header-item-user span {
+    position: absolute; 
+    bottom: 0; 
+    left: 0; 
+    font-size: 11px;
+}
+
 .header-item svg {
     fill: #5f6368
 }
