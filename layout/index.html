@@ -6,14 +6,30 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chat</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/style.css">
     <script src="https://kit.fontawesome.com/655272e9b6.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
 </head>
 
 <body>
-    <aside>
+    <header class="header">
+        <div class="header-item">
+            <svg focusable="false" width="24" height="24" viewBox="0 0 24 24" class="Hdh4hc cIGbvc NMm5M"><path d="M15 8c0-1.42-.5-2.73-1.33-3.76.42-.14.86-.24 1.33-.24 2.21 0 4 1.79 4 4s-1.79 4-4 4c-.43 0-.84-.09-1.23-.21-.03-.01-.06-.02-.1-.03A5.98 5.98 0 0 0 15 8zm1.66 5.13C18.03 14.06 19 15.32 19 17v3h4v-3c0-2.18-3.58-3.47-6.34-3.87zM9 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2m0 9c-2.7 0-5.8 1.29-6 2.01V18h12v-1c-.2-.71-3.3-2-6-2M9 4c2.21 0 4 1.79 4 4s-1.79 4-4 4-4-1.79-4-4 1.79-4 4-4zm0 9c2.67 0 8 1.34 8 4v3H1v-3c0-2.66 5.33-4 8-4z"></path></svg>
+        </div>
+        <div class="header-item">
+            <svg focusable="false" width="24" height="24" viewBox="0 0 24 24" class="Hdh4hc cIGbvc NMm5M"><path d="M20 2H4c-1.1 0-1.99.9-1.99 2L2 22l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm0 14H4V4h16v12z"></path><path d="M6 12h12v2H6zm0-3h12v2H6zm0-3h12v2H6z"></path></svg>
+        </div>
+        <div class="header-item">
+            10:10
+        </div>
+        <div class="header-item">
+            <span>você</span>
+        </div>
+    </header>
+    <!--<aside>
         <div class="messages">
             <span>
                 <strong>Fulano:</strong>
@@ -27,23 +43,73 @@
         <div class="send-messages">
             <input type="text" placeholder="Enviar mensagem">
         </div>
-    </aside>
+    </aside>-->
     <main class="video-grid">
     </main>
     <footer>
         <div class="details-container">
-            <span>Detalhes da reunião</span>
+            <span style="margin-right: 12px;">Detalhes da reunião</span>
+            <i class="fas fa-chevron-up"></i>
         </div>
         <div class="options-container">
             <ul class="options-list">
-                <li>
-                    <i class="fas fa-microphone-alt"></i>
+                <li class="mic">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="48" height="48"
+                        preserveAspectRatio="xMidYMid meet"
+                        style="width: 100%; height: 100%; transform: translate3d(0px, 0px, 0px);">
+                        <defs>
+                            <clipPath id="__lottie_element_22">
+                                <rect width="48" height="48" x="0" y="0"></rect>
+                            </clipPath>
+                            <mask id="__lottie_element_24">
+                                <rect fill="#ffffff" width="48" height="48"
+                                    transform="matrix(0.7407407164573669,0,0,0.7407407164573669,-17.77777671813965,-17.77777671813965)">
+                                </rect>
+                                <path fill="#000000" clip-rule="nonzero"
+                                    d=" M-7.769999980926514,-10.111000061035156 C-7.769999980926514,-10.111000061035156 -9.187000274658203,-8.694000244140625 -9.187000274658203,-8.694000244140625 C-9.187000274658203,-8.694000244140625 -9.182999610900879,-8.696000099182129 -9.182999610900879,-8.696000099182129 C-9.182999610900879,-8.696000099182129 -7.765999794006348,-10.11299991607666 -7.765999794006348,-10.11299991607666 C-7.765999794006348,-10.11299991607666 -7.769999980926514,-10.111000061035156 -7.769999980926514,-10.111000061035156"
+                                    fill-opacity="1"></path>
+                            </mask>
+                        </defs>
+                        <g clip-path="url(#__lottie_element_22)">
+                            <g mask="url(#__lottie_element_24)"
+                                transform="matrix(1.350000023841858,0,0,1.350000023841858,24,24)" opacity="1"
+                                style="display: block;">
+                                <g opacity="1" transform="matrix(1,0,0,1,0,0)">
+                                    <g class="stroke KIzDle" opacity="0" transform="matrix(1,0,0,1,0,0)">
+                                        <path class="fill bkbMM" fill="rgb(95,99,104)" fill-opacity="1"
+                                            d=" M-9.187999725341797,-8.692999839782715 C-9.187999725341797,-8.692999839782715 -10.604999542236328,-7.276000022888184 -10.604999542236328,-7.276000022888184 C-10.604999542236328,-7.276000022888184 -10.604999542236328,-7.276000022888184 -10.604999542236328,-7.276000022888184 C-10.604999542236328,-7.276000022888184 -9.187999725341797,-8.692999839782715 -9.187999725341797,-8.692999839782715 C-9.187999725341797,-8.692999839782715 -9.187999725341797,-8.692999839782715 -9.187999725341797,-8.692999839782715z">
+                                        </path>
+                                    </g>
+                                    <g opacity="1" transform="matrix(1,0,0,1,0,0)">
+                                        <path class="fill bkbMM" fill="rgb(95,99,104)" fill-opacity="1"
+                                            d=" M5,-0.5 C5,2.259999990463257 2.759999990463257,4.5 0,4.5 C-2.759999990463257,4.5 -5,2.259999990463257 -5,-0.5 C-5,-0.5 -7,-0.5 -7,-0.5 C-7,3.0299999713897705 -4.389999866485596,5.929999828338623 -1,6.420000076293945 C-1,6.420000076293945 -1,9.5 -1,9.5 C-1,9.5 1,9.5 1,9.5 C1,9.5 1,6.420000076293945 1,6.420000076293945 C4.389999866485596,5.929999828338623 7,3.0299999713897705 7,-0.5 C7,-0.5 5,-0.5 5,-0.5z M-1,-6.5 C-1,-7.050000190734863 -0.550000011920929,-7.5 0,-7.5 C0.550000011920929,-7.5 1,-7.050000190734863 1,-6.5 C1,-6.5 1,-0.5 1,-0.5 C1,0.05000000074505806 0.550000011920929,0.5 0,0.5 C-0.550000011920929,0.5 -1,0.05000000074505806 -1,-0.5 C-1,-0.5 -1,-6.5 -1,-6.5z M0,2.5 C1.659999966621399,2.5 3,1.159999966621399 3,-0.5 C3,-0.5 3,-6.5 3,-6.5 C3,-8.15999984741211 1.659999966621399,-9.5 0,-9.5 C-1.659999966621399,-9.5 -3,-8.15999984741211 -3,-6.5 C-3,-6.5 -3,-0.5 -3,-0.5 C-3,1.159999966621399 -1.659999966621399,2.5 0,2.5z">
+                                        </path>
+                                    </g>
+                                </g>
+                            </g>
+                        </g>
+                    </svg>
                 </li>
-                <li>
-                    <i class="fas fa-phone"></i>
+                <!--<li>
+                    <svg focusable="false" width="24" height="24" viewBox="0 0 24 24" class="Hdh4hc cIGbvc NMm5M">
+                        <path
+                            d="M11 5c0-.55.45-1 1-1s1 .45 1 1v5.17l1.82 1.82c.11-.31.18-.64.18-.99V5c0-1.66-1.34-3-3-3S9 3.34 9 5v1.17l2 2V5zM2.81 2.81L1.39 4.22l11.65 11.65c-.33.08-.68.13-1.04.13-2.76 0-5-2.24-5-5H5c0 3.53 2.61 6.43 6 6.92V21h2v-3.08c.57-.08 1.12-.24 1.64-.46l5.14 5.14 1.41-1.41L2.81 2.81zM19 11h-2c0 .91-.26 1.75-.69 2.48l1.46 1.46A6.921 6.921 0 0 0 19 11z">
+                        </path>
+                    </svg>
+                </li>-->
+                <li class="phone">
+                    <svg focusable="false" width="24" height="24" viewBox="0 0 24 24" class="Hdh4hc cIGbvc NMm5M">
+                        <path
+                            d="M23.62 11.27c-2.03-1.72-4.46-3-7.12-3.69C15.06 7.21 13.56 7 12 7s-3.06.21-4.5.58c-2.66.69-5.08 1.96-7.12 3.69-.45.38-.5 1.07-.08 1.49l.67.67 2.26 2.26c.33.33.85.39 1.25.13l2.56-1.64c.29-.18.46-.5.46-.84V9.65C8.93 9.23 10.44 9 12 9s3.07.23 4.5.65v3.68c0 .34.17.66.46.84l2.56 1.64c.4.25.92.2 1.25-.13l2.26-2.26.67-.67c.41-.41.37-1.1-.08-1.48z">
+                        </path>
+                    </svg>
                 </li>
-                <li>
-                    <i class="fas fa-video"></i>
+                <li class="camera marked">
+                    <svg focusable="false" width="24" height="24" viewBox="0 0 24 24" class="Hdh4hc cIGbvc NMm5M">
+                        <path
+                            d="M18 10.48V6c0-1.1-.9-2-2-2H6.83l2 2H16v7.17l2 2v-1.65l4 3.98v-11l-4 3.98zM16 16L6 6 4 4 2.81 2.81 1.39 4.22l.85.85C2.09 5.35 2 5.66 2 6v12c0 1.1.9 2 2 2h12c.34 0 .65-.09.93-.24l2.85 2.85 1.41-1.41L18 18l-2-2zM4 18V6.83L15.17 18H4z">
+                        </path>
+                    </svg>
                 </li>
             </ul>
         </div>
