@@ -160,7 +160,7 @@ footer {
     display: flex;
 }
 
-.details-container, .start-presentation-container {
+.details-container, .start-presentation-container, .more-options {
     display: flex;
     align-items: center;
     padding: 0 20px;
@@ -168,8 +168,13 @@ footer {
 }
 
 .details-container:hover,
-.start-presentation-container:hover {
+.start-presentation-container:hover,
+.more-options:hover {
     cursor: pointer; background-color: #a2a5a831;
+}
+
+.more-options svg {
+    fill: #5f6368;
 }
 
 .start-presentation-container span {
