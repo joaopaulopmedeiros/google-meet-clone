@@ -103,6 +103,8 @@ main {
     grid-template-columns: repeat(auto-fill, 300px);            
     grid-auto-rows: 240px;
     grid-gap: 20px;
+
+    padding-left: 30px;
 }
 
 main video {
@@ -174,7 +176,7 @@ footer {
 
 
 
-@media(max-width: 768px) {
+@media(max-width: 1000px) {
     aside, 
     .details-container, 
     .start-presentation-container{
@@ -185,6 +187,7 @@ footer {
         display: flex;
         justify-content: center;
         align-items: center;
+        padding-left: 0;
     }
     video:not(:first-child) {
         display: none;
