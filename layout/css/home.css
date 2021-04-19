@@ -226,6 +226,9 @@ main {
 }
 
 @media(max-width: 576px) {
+    .header {
+        justify-content: space-around;
+    }
     .header .logo,
     .header .more-options {
         display: none;
@@ -249,6 +252,9 @@ main {
     .start-chat {
         flex-direction: column;
         align-items: center;
+    }
+    .separate {
+        width: 90%;
     }
     .start-chat input {
         margin-top: 40px;
