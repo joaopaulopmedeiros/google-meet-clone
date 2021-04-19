@@ -14,6 +14,7 @@ body {
     max-height: 100vh;
     overflow: hidden;
     font-family: 'Noto sans', sans-serif;
+    color: #5f6368;
 }
 
 a {
@@ -87,3 +88,23 @@ svg {
     height: 32px; 
     margin: 0 8px 0 16px;
 }
+
+@media(max-width: 768px) {
+    .header .logo {
+        display: none;
+    }
+}
+
+@media(max-width: 576px) {
+    .header .logo,
+    .header .more-options {
+        display: none;
+    }
+    .header .options {
+        margin: 0 0 0 16px;
+    }
+    .header .time span {
+        font-size: 15px;
+    }
+}
+
