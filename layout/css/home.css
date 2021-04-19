@@ -206,7 +206,7 @@ main {
     line-height: 2rem;
 }
 
-@media(max-width: 1000px) {
+@media (max-width: 1200px) {
     main {
         flex-direction: column;
         text-align: center;
@@ -216,12 +216,6 @@ main {
     }
     .start-chat {
         justify-content: center;
-    }
-}
-
-@media(max-width: 768px) {
-    .header .logo {
-        display: none;
     }
 }
 
